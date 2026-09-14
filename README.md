@@ -6,4 +6,11 @@ Repositorio de la materia de Estructura de Datos ,Semestre 3
  Identificar,selecciona y aplica eficientemente tipos de datos abstractos, metodos de ordenamiento y busqueda para la optimización del rendimiento de soluciones de problemas del mundo real.
 
  ## Contenido ##
- ## UNIDAD 1 ##
+
+ ## Unidad 1  Fundamento de base de datos 
+ 
+ ## Unidad 2 Estructuras lineales ## 
+
+ ## Unidad 3 Estructuras no lineales ##
+
+ ## Unidad 4 Métodos de ordenamiento y busqueda ##
