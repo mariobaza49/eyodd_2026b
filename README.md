@@ -1,3 +1,4 @@
+![alt text](image.png)
 # eyodd_2026b
 Repositorio de la materia de Estructura de Datos ,Semestre 3
 
@@ -8,9 +9,13 @@ Repositorio de la materia de Estructura de Datos ,Semestre 3
  ## Contenido ##
 
  ## Unidad 1  Fundamento de base de datos 
+ Fundamentos de estructura de datos 
  
  ## Unidad 2 Estructuras lineales ## 
+ Estructuras lineales 
 
  ## Unidad 3 Estructuras no lineales ##
+ Estructuras no lineales 
 
  ## Unidad 4 Métodos de ordenamiento y busqueda ##
+ Metodos de ordenamiento y busqueda 
