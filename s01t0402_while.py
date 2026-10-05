@@ -3,23 +3,67 @@ Escribir un programa que calcule la suma de los "n" números naturales.
 Por ejemplo, si n = 100, el programa calculará la suma del 1 al 100.
 """
 
-#Importar la biblioteca de tiempo
+# Importamos biblioteca
 import time
-#Crear las variables para el problema 
-n = 100
-the_sum = 0
-#Tomando el t1
-timestamp_01 = time.time()
-# Iniciando la suma
-# 100
-while(n > 0):
-    the_sum = the_sum + n # 100 + 99 + 98 + 97 + ...
-    n = n - 1
-timestamp_02 = time.time()
-# imprimimos la solucion 
-print(f"La suma es {the_sum}")
 
-# Calculamos el tiempo 
-elapsed_time = round((timestamp_02-timestamp_01) * 1e6,2)
-print(f"Tiempo de ejecucion: {elapsed_time} µs")
+# Funcion que suma los primeros "n" numeros naturales
+# Creando una marca de tiempo
+def sum_of_n(n):
+    total_sum = 0
+    number = 1
 
+    # sumando los "n" numeros
+    # Ciclo while
+    while number <= n:
+        total_sum = total_sum + number
+        number = number + 1
+
+    return total_sum
+
+
+# Variable para guardar
+# EL DATA SET
+dataset = []  # [(n,time,sum),(n,time,sum)]
+
+
+# Generando el contenido del dataset
+repetition = 1
+
+while repetition <= 10:
+
+    # Tomo el tiempo 1
+    # Tomando el tiempo inicial
+    timestamp_01 = time.time()
+
+    # Sumo los "n" numeros
+    n = repetition * 500
+
+    # Guardo el resultado en result
+    result = sum_of_n(n)
+
+    # Tomando el tiempo final
+    timestamp_02 = time.time()
+
+    # Calculando el tiempo
+    elapsed_time = round((timestamp_02 - timestamp_01) * 1e6, 2)
+
+    # Agregar la tripleta de los datos al dataset
+    dataset.append((n, elapsed_time, result))
+
+    repetition = repetition + 1
+
+
+# Imprimir el dataset
+for tup in dataset:
+    print(tup)
+
+
+# Programa que calcula la suma de los "n" números naturales
+n = 500
+total_sum = 0
+
+total_sum = sum_of_n(n)
+
+
+# Impresión del tiempo de ejecución
+print(f"Tiempo de ejecución: {(timestamp_02 - timestamp_01) * 1e6:.2f} µs")
