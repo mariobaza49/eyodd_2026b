@@ -1,8 +1,9 @@
 # Creamos una lista de estudiantes
+#O(1)
 student_list_01 = ['Jordan','Pipen','Curry','Shack'] # ?
 
 def random_function(students):
-    first = students[0] # ?
+    first = students[0] # ? accediendo a un miembro de la lista y no afecta la operacion 
     total = 0 # ?
     new_list = [] # ?
 
@@ -15,17 +16,14 @@ def random_function(students):
 
 print(random_function(student_list_01))
 
-# Calcular O(?)
+# Calcular O(2n)+O(5) = O(2n+5) = O(n)
 
 # student_list_01 = O(1)
 # first = O(1)
 # total = O(1)
 # new_list = O(1)
-# for = O(n)
-# total += 1 = O(1)
-# new_list.append(student) = O(1)
-# print(new_list) = O(n)
+# total += 1 = O(n)
+# new_list.append(student) = O(n)
+# print(new_list) = O(1)
 # return total = O(1)
-# print(random_function) = O(n)
 
-# Big O = O(n)
