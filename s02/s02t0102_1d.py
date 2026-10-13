@@ -10,16 +10,15 @@ def print_array(input):
 my_array = arr('i',[2,10,15,20])
 print_array(my_array)
 #Buscar elemento 15
-number_to_search = 100
+number_to_search = 20
 counter = 0
 print(f"Se busca {number_to_search} en el arreglo.")
 for intenger in my_array:
-
-if intenger == number_to_search:
-    print("Numero encontrado")
+  if intenger == number_to_search:
+    print("🎉Numero encontrado")
 # Sirve para termninar el ciclo
-break
+  break
 #incrementa el contador 
-couter+=1
+counter+=1
 if counter == len(my_array):
-    print("😡")
+    print("😡Numero no encontrado")
