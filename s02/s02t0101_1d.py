@@ -31,3 +31,9 @@ my_array = arr('i',[10,22,300,3,7,40,55,80,200,644,34])
 
 #Busqueda de un elemento
 print(f"Localizando 200: {my_array.index(200)}")
+
+#Asignando un valor en un indice que no existe
+try:
+  my_array[100] = 3 
+except:
+  print("⚠️Indice no existe!!!")
