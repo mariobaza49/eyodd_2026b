@@ -13,7 +13,7 @@ for _ in range(rows):
 
 #Validando la construccionn del grid
 print(f"Cantidad de filas: {len(matrix)}")
-print(f"Cantidad de columnas: {len(matrix[0]}")
+print(f"Cantidad de columnas: {len(matrix[0])}")
 
 for row in matrix:
  print(list(row))
